@@ -1,0 +1,79 @@
+%-------------------------
+% Clean Homework Template in LaTeX
+% License: MIT
+%------------------------
+\documentclass[11pt,a4paper]{article}
+
+% Page layout and basic packages
+\usepackage[bottom=2.0cm,top=2.0cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{wasysym}
+\usepackage{subcaption}
+
+% Code listing settings
+\lstset{
+    frameround=fttt,
+    language=Python,
+    numbers=none,
+    breaklines=true,
+    keywordstyle=\color{blue}\bfseries, 
+    basicstyle=\ttfamily\color{black},
+    numberstyle=\color{black},
+    commentstyle=\color{green!40!black}
+}
+
+\begin{document}
+
+% Cover page
+\begin{titlepage}
+\begin{center}
+    \vspace*{2cm}
+    
+    {\huge \textbf{[Course Code] - Assignment [Number]}}
+    
+    \vspace{2cm}
+    
+    {\Large Team Members and Contributions:}
+    
+    \vspace{1cm}
+    
+    \begin{tabular}{p{4cm} p{8cm}}
+    \textbf{[Name 1]} & [Contribution 1] \\[0.3cm]
+    \textbf{[Name 2]} & [Contribution 2] \\[0.3cm]
+    \textbf{[Name 3]} & [Contribution 3] \\[0.3cm]
+    \textbf{[Name 4]} & [Contribution 4]
+    \end{tabular}
+    
+    \vfill
+    
+    {\large \today}
+\end{center}
+\end{titlepage}
+
+% Useful commands for math symbols and diagrams
+\newcommand{\true}{\textcolor{blue}{true}}
+\newcommand{\false}{\textcolor{blue}{false}}
+\renewcommand{\Square}{\tikz \draw[black] (0,0) rectangle (0.21,0.21);}
+\newcommand{\bluesquare}{\textcolor{blue}{\tikz \fill[blue] (0,0) rectangle (0.2,0.2);}}
+\renewcommand{\Circle}{\tikz \draw[black] (0,0) circle [radius=0.16];}
+\newcommand{\bluecircle}{\textcolor{blue}{\tikz\fill[blue] (0,0) circle [radius=0.15];}}
+
+% Example problem section
+\section*{Problem 1}
+[Problem statement goes here]
+
+\vspace{5cm}
+
+% Add more problems as needed...
+
+\end{document}
